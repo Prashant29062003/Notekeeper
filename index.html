@@ -47,6 +47,10 @@
     />
 
     <!-- 
+        - custom js link
+     -->
+     <script src="./src/js/style.js" type="module" defer></script>
+    <!-- 
             - custom css link
           -->
     <link rel="stylesheet" href="./src/css/style.css" />
@@ -57,7 +61,7 @@
     <script src="./src/js/app.js" type="module" defer></script>
   </head>
   <body>
-    <header class="sidebar" data-sidebar>
+    <header class="sidebar active" data-sidebar>
 
         <div class="wrapper wrapper-1">
             <a href="/" target="_blank" rel="noopener noreferrer">
@@ -65,13 +69,13 @@
                 <img src="./src/images/logo-dark.svg" alt="KEEP-NOTES" class="logo-dark">
             </a>
 
-            <button class="menu-btn icon-btn large" aria-label="Close menu" data-sidebar-toggler>
+            <button class="menu-btn icon-btn large state-layer-parent" aria-label="Close menu" data-sidebar-toggler>
                 <span class="material-symbols-rounded" aria-hidden="true">close</span>
                 <div class="state-layer"></div>
             </button>
         </div>
 
-        <button class="fab" data-note-create-btn>
+        <button class="fab state-layer-parent" data-note-create-btn>
             <span class="material-symbols-rounded" aria-hidden="true">add</span>
 
             <span class="text text-label-large">New Note</span>
@@ -80,7 +84,7 @@
 
         <div class="wrapper wrapper-2">
             <h2 class="text-title-small">NOTEBOOKS</h2>
-            <button class="iocn-btn small" data-tooltip="Create new notebook" data-add-notebook>
+            <button class="iocn-btn small state-layer-parent" data-tooltip="Create new notebook" data-add-notebook>
                 <span class="material-symbols-rounded" data-hidder="true">add</span>
                 <div class="state-layer"></div>
             </button>
@@ -88,16 +92,16 @@
 
         <nav class="nav custom-scrollbar" data-sidebar-list>
 
-            <div class="nav-item">
+            <div class="nav-item state-layer-parent">
 
                 <span class="text text-label-large" data-notebook-field>My Notebook</span>
 
-                <button class="icon-btn small" aria-label="Edit notebook" data-tooltip="Edit notebook" data-edit-btn>
+                <button class="icon-btn small state-layer-parent" aria-label="Edit notebook" data-tooltip="Edit notebook" data-edit-btn>
                     <span class="material-symbols-rounded" aria-hidden="true">edit</span>
                     <div class="state-layer"></div>
                 </button>
 
-                <button class="icon-btn small" aria-label="Delete notebook" data-tooltip="Delete notebook" data-delete-btn>
+                <button class="icon-btn small state-layer-parent" aria-label="Delete notebook" data-tooltip="Delete notebook" data-delete-btn>
                     <span class="material-symbols-rounded" aria-hidden="true">delete</span>
                     <div class="state-layer"></div>
                 </button>
